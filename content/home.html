@@ -1,0 +1,26 @@
+<div class="card">
+  <h2> Новая задача</h2>
+  <form id="note-form" class="row">
+    <input class="col-9" type="text" id="note-input" placeholder="Что нужно сделать?" required>
+    <button class="col-3 button-primary" type="submit">Добавить</button>
+  </form>
+</div>
+
+<div class="card">
+  <h2>⏰ Напоминание</h2>
+  <form id="reminder-form" class="row">
+    <input class="col-5" type="text" id="reminder-text" placeholder="Текст напоминания" required>
+    <input class="col-4" type="datetime-local" id="reminder-time" required>
+    <button class="col-3 button-success" type="submit">Установить</button>
+  </form>
+</div>
+
+<div class="card">
+  <h2> Список задач</h2>
+  <ul id="notes-list" style="list-style: none; padding-left: 0;"></ul>
+  
+  <div style="margin-top: 1.5rem; text-align: center;">
+    <button id="enable-push" class="button-success"> Включить уведомления</button>
+    <button id="disable-push" class="button" style="display:none; background:#ef4444; color:white;">Выключить</button>
+  </div>
+</div>
